@@ -1,3 +1,14 @@
 body{
-    font-family: 'Playfair Display', non-serif
+    font-family: 'Playfair Display', serif;
+    font-size: 14px;
+    color: #626262;
+}
+.ubuntu{
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 14px;
+    text-transform: uppercase;
+    color: #b4ad9e;
+}
+.tittle{
+    font-size: 30px;
 }
