@@ -69,7 +69,9 @@ body{
 .main-menu li:nth-child(2){
     margin-right: 100px;
 }
-
+.main-menu-item-left a:first-child{
+    color: #03a9f4;
+}
 .main-menu a:hover,
 .main-menu a:focus {
    color: #03a9f4; 
