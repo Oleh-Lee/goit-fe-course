@@ -23,7 +23,7 @@ body{
     font-weight: 400;
 }
 .container{
-    width: 901px;
+    width: 900px;
     margin: 0 auto
 }
 .ubuntu{
@@ -32,28 +32,33 @@ body{
     line-height: 24px;
     text-transform: uppercase;
     color: #b4ad9e;
+    margin-bottom: 10px;
+    margin-top: 5px;
 }
 .tittle{
     font-size: 30px;
     font-weight: 400;
-    line-height: 24px ;
+    line-height: 36px ;
 }
 .main-menu a {
     display: inline-block;
-    margin: 0px;
-    padding: 0px;
     text-decoration: none;
     text-transform: uppercase;
     list-style: none;
-    text-align: center;
-    vertical-align: middle;
+    
     
 }
-.main-menu li:not(:last-child) {
-    margin-right: 100px;
+.main-menu{
+   
+    margin-top: 75px;
+    padding: 0px;
 }
+
+
 .main-menu li{
     display: inline-block;
+    margin-left: 130px;
+    
 }
 
 .main-menu a:hover{
@@ -66,7 +71,8 @@ img{
     display: block;
     max-width: 100%;
     height: auto;
-    margin-bottom: 20px;
+    margin-bottom: 25px;
+    margin-top: 130px;
 }
 section{
     margin: 0px;
@@ -74,11 +80,15 @@ section{
 }
 .article{
     display: inline-block;
-    width: 421px;
+    width: 420px;
     
 }
 article:nth-child(2n) {
-    margin-right: 55px;
+    margin-right: 56px;
+}
+.text{
+    margin-top: 34px;
+    
 }
 
 
@@ -96,8 +106,3 @@ input[type="radio"].visually-hidden{
     clip: rect(0 0 0 0);
     overflow:hidden;
 }
-
-
-
-
-
