@@ -1,14 +1,92 @@
+html{
+    box-sizing: border-box;
+}
+*, *::before, *::after{
+    box-sizing: inherit;
+}
+
+
 body{
     font-family: 'Playfair Display', serif;
     font-size: 14px;
     color: #626262;
+    line-height: 24px;
+    font-weight: 400;
+}
+.container{
+    width: 901px;
+    margin: 0 auto
 }
 .ubuntu{
     font-family: 'Ubuntu', sans-serif;
     font-size: 14px;
+    line-height: 24px;
     text-transform: uppercase;
     color: #b4ad9e;
 }
 .tittle{
     font-size: 30px;
+    font-weight: 400;
+    line-height: 24px ;
 }
+.main-menu a {
+    display: inline-block;
+    margin: 0px;
+    padding: 0px;
+    text-decoration: none;
+    text-transform: uppercase;
+    list-style: none;
+    text-align: center;
+    vertical-align: middle;
+    
+}
+.main-menu li:not(:last-child) {
+    margin-right: 100px;
+}
+.main-menu li{
+    display: inline-block;
+}
+
+.main-menu a:hover{
+   color: #03a9f4; 
+}
+
+}
+img{
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+section{
+    margin: 0px;
+    padding: 0px;
+}
+article{
+    display: inline-block;
+    margin-right: 55px;
+    width: 421px;
+    margin-right: 30px;
+}
+article:nth-child(2n) {
+    margin-right: 0px;
+}
+.load-more{
+    display: inline-block;
+    text-align: center;
+}
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden{
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border:0;
+    padding: 0;
+    white-space:nowrap;
+    clip-path:inset(100%);
+    clip: rect(0 0 0 0);
+    overflow:hidden;
+}
+
+
