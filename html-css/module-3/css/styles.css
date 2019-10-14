@@ -14,6 +14,7 @@ h3{
     margin-bottom: 0px;
 }
 
+
 body{
     font-family: 'Playfair Display', serif;
     font-size: 14px;
@@ -31,8 +32,7 @@ body{
     line-height: 24px;
     text-transform: uppercase;
     color: #b4ad9e;
-    margin-bottom: 10px;
-    margin-top: 5px;
+    
 }
 .tittle{
     font-size: 30px;
@@ -88,7 +88,9 @@ section{
 }
 
 .text{
+     font-size: 14px;  
     margin-top: 34px;
+    margin-bottom: 0px;
     
 }
 .content-list{
@@ -103,9 +105,7 @@ section{
 .content-item:not(:nth-child(2n)){
     margin-right: 60px;
 }
-.text{
-    font-size: 14px;   
-}
+
 .load-more{
     margin-top: 52px;
     margin-left: 360px;
