@@ -51,7 +51,7 @@ body{
    color: #03a9f4; 
 }
 
-}
+
 img{
     display: block;
     max-width: 100%;
@@ -61,19 +61,16 @@ section{
     margin: 0px;
     padding: 0px;
 }
-article{
+.article{
     display: inline-block;
-    margin-right: 55px;
     width: 421px;
-    margin-right: 30px;
+    
 }
 article:nth-child(2n) {
-    margin-right: 0px;
+    margin-right: 55px;
 }
-.load-more{
-    display: inline-block;
-    text-align: center;
-}
+
+
 .visually-hidden:not(:focus):not(:active),
 input[type="checkbox"].visually-hidden,
 input[type="radio"].visually-hidden{
