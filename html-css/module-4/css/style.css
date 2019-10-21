@@ -1,0 +1,109 @@
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden{
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border:0;
+    padding: 0;
+    white-space:nowrap;
+    clip-path:inset(100%);
+    clip: rect(0 0 0 0);
+    overflow:hidden;
+}
+body{
+    font-family: 'Open Sans', sans-serif;
+    color: #555252;
+    font-size: 14px;
+    line-height: 26px;
+}
+.logo{
+    font-size: 0px;
+    list-style: none;
+}
+.logo a{
+    font-size: 30px;
+    line-height: 32px;
+    font-weight: 400;
+    letter-spacing: -0.60px ;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #555252;
+}
+.logo a:hover{
+    color: #1abc9c;
+}
+.logo::first-letter{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    color: #1abc9c;
+}
+.site-navigation{
+    font-size: 0px;
+    list-style: none;
+    }
+.site-navigation a{
+    color: #0f0101;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-decoration: none;
+    line-height: 11px;
+    font-size: 14px;
+    letter-spacing: -0.28px;
+}
+.site-navigation a:hover{
+    color: #1abc9c;
+}
+h2{
+    font-size: 0;
+}
+.product-title{
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 32px;
+    text-transform: uppercase;
+    color: #515151;
+    letter-spacing: -0.96px;
+}
+.product-list{
+    list-style: none;
+    font-size: 0;
+}
+.product-list-item p{
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 32px;
+    letter-spacing: -0.360px;
+}
+.news-title{
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 32px;
+    text-transform: uppercase;
+    color: #515151;
+    letter-spacing: -0.96px;
+}
+.news-list{
+    list-style: none;
+    font-size: 0;
+    
+}
+.article-title{
+font-size: 18px;
+line-height: 26px;
+font-weight: 600;
+letter-spacing: -0.36px;
+}
+.article-text{
+    font-size: 14px;
+    line-height: 26px;
+    letter-spacing: -0.28px;
+    font-weight: 400;
+}
+.read-more{
+    font-size: 16px;
+    line-height: 26px;
+    font-weight: 300;
+    letter-spacing: -0.32px;
+}
