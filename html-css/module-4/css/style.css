@@ -101,7 +101,6 @@ header{
     text-align: center;
     margin-bottom: 32px;
 }
-
 .product-title{
     font-family: 'Roboto', sans-serif;
     font-weight: 900;
@@ -111,19 +110,20 @@ header{
     color: #515151;
     letter-spacing: -0.96px;
 }
-.product-list{
-    list-style: none;
-    margin: 0;
-    padding: 0;
-}
-.product-list::before{
+.product-title::after{
     display: block;
     content: '';
     height: 8px;
     width: 160px;
     background-color: #1abc9c;
     margin: 0 auto;
-    margin-bottom: 92px;
+    margin-top: 32px;
+    margin-bottom: 90px;
+}
+.product-list{
+    list-style: none;
+    margin: 0;
+    padding: 0;
 }
 .product-list-item{
     width: 254px;
@@ -144,7 +144,12 @@ header{
     letter-spacing: -0.360px;
     float: left;  
 }
-
+.product-list-item:hover .card-bottom p{
+    background-color: #1abc9c;
+}
+.product-list-item:hover .card-bottom p:last-child{
+    background-color: #7fd9c7;
+}
 p.text{
     display: block;
     width: 200px;
@@ -178,15 +183,15 @@ padding-bottom: 46px;
     color: #515151;
     letter-spacing: -0.96px;
     text-align: center;
-    margin-bottom: 32px;
 }
-.news-list::before{
+.news-title::after{
     display: block;
     content: '';
     height: 8px;
     width: 160px;
     background-color: #1abc9c;
     margin: 0 auto;
+    margin-top: 32px;
     margin-bottom: 82px;
 }
 .news-list{
@@ -209,7 +214,6 @@ font-size: 18px;
 line-height: 26px;
 font-weight: 600;
 letter-spacing: -0.36px;
-
 }
 .article-text{
     font-size: 14px;
@@ -223,12 +227,12 @@ letter-spacing: -0.36px;
     height: 4px;
     width: 132px;
     background-color: #1abc9c;
-    margin: 0
+    margin-top: 10px;
 }
 .read-more{
     border: none;
     border-radius: 4px;
-    padding: 14px 36px;
+    padding: 14px 40px;
     font-size: 16px;
     line-height: 26px;
     font-weight: 300;
