@@ -42,11 +42,11 @@ body{
     margin: 0 auto;
 }
 .products{
-    padding-bottom: 36px;
+    padding-bottom: 106px;
 }
 header{
-    padding-top: 34px;
-    padding-bottom: 58px;
+    padding-top: 36px;
+    padding-bottom: 98px;
 }
 .logo{
     margin: 0;
@@ -74,13 +74,13 @@ header{
 .site-navigation{
     list-style: none;
     margin: 0;
-    margin-top: 4px;
     padding: 0;
-    float: right;
-    width: 486px;
+    text-align: right;
+    width: 1110px;
     }
     .site-navigation li{
-        float: left;
+        display: inline-block;   
+        vertical-align: middle;
     }
     .site-navigation li:not(:last-child){
         margin-right: 36px;
@@ -99,6 +99,7 @@ header{
 }
 .product-title{
     text-align: center;
+    margin: 0;
     margin-bottom: 32px;
 }
 .product-title{
@@ -132,6 +133,9 @@ header{
 }
 .product-list-item:nth-child(4n){
     margin-right: 0;
+}
+.product-list-item:nth-child(n+4){
+    margin-bottom: 0;
 }
 .product-list-item{
     float: left;
@@ -176,6 +180,7 @@ p.price{
 padding-bottom: 46px;
 }
 .news-title{
+    margin: 0;
     font-weight: 700;
     font-size: 48px;
     line-height: 32px;
@@ -209,17 +214,23 @@ padding-bottom: 46px;
 .news-list-item{
     float: left;
 }
+.news-list-image{
+    margin-bottom: 10px;
+}
 .article-title{
+    margin: 0;
 font-size: 18px;
 line-height: 26px;
 font-weight: 600;
 letter-spacing: -0.36px;
 }
 .article-text{
+    margin: 0;
     font-size: 14px;
     line-height: 26px;
     letter-spacing: -0.28px;
     font-weight: 400;
+    margin-bottom: 14px;
 }
 .article-title::after{
     display: block;
@@ -228,16 +239,25 @@ letter-spacing: -0.36px;
     width: 132px;
     background-color: #1abc9c;
     margin-top: 10px;
+    margin-bottom: 18px;
 }
 .read-more{
     border: none;
     border-radius: 4px;
-    padding: 12px 40px;
+    text-align: center;
+    padding-top: 12px;
     font-size: 16px;
     line-height: 26px;
     font-weight: 300;
     color: #ffffff;
     background-color: #4ec6ab;
     cursor: pointer;
-    display: block;    
+    display: block;  
+    width: 160px;
+    height: 50px;  
+    text-decoration: none;
+    list-style: none;
+}
+.read-more:hover{
+    background-color: #7fd9c7;
 }
