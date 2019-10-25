@@ -45,8 +45,8 @@ body{
     padding-bottom: 106px;
 }
 header{
-    padding-top: 36px;
-    padding-bottom: 98px;
+    padding-top: 38px;
+    padding-bottom: 100px;
 }
 .logo{
     margin: 0;
@@ -54,7 +54,7 @@ header{
     list-style: none;
     float: left;
 }
-.logo a{
+.logo{
     font-size: 30px;
     line-height: 32px;
     font-weight: 400;
@@ -63,7 +63,7 @@ header{
     text-transform: uppercase;
     color: #555252;
 }
-.logo a:hover{
+.logo:hover{
     color: #1abc9c;
 }
 .logo::first-letter{
@@ -75,12 +75,12 @@ header{
     list-style: none;
     margin: 0;
     padding: 0;
-    text-align: right;
-    width: 1110px;
+    width: 490px;
+    float: right;
+    
     }
     .site-navigation li{
-        display: inline-block;   
-        vertical-align: middle;
+        float: left;
     }
     .site-navigation li:not(:last-child){
         margin-right: 36px;
@@ -90,9 +90,11 @@ header{
     font-weight: 700;
     text-transform: uppercase;
     text-decoration: none;
-    line-height: 11px;
+    line-height: 34px;
     font-size: 14px;
     letter-spacing: -0.28px;
+    display: block;
+    
 }
 .site-navigation a:hover{
     color: #1abc9c;
@@ -100,9 +102,6 @@ header{
 .product-title{
     text-align: center;
     margin: 0;
-    margin-bottom: 32px;
-}
-.product-title{
     font-family: 'Roboto', sans-serif;
     font-weight: 900;
     font-size: 48px;
@@ -110,6 +109,7 @@ header{
     text-transform: uppercase;
     color: #515151;
     letter-spacing: -0.96px;
+    margin-bottom: 94px;
 }
 .product-title::after{
     display: block;
@@ -119,7 +119,6 @@ header{
     background-color: #1abc9c;
     margin: 0 auto;
     margin-top: 32px;
-    margin-bottom: 90px;
 }
 .product-list{
     list-style: none;
@@ -173,8 +172,7 @@ p.price{
     color: #ffffff;
     margin: 0;
     text-align: center;
-    text-transform: uppercase;
-    
+    text-transform: uppercase; 
 }
 .news{
 padding-bottom: 46px;
@@ -188,6 +186,7 @@ padding-bottom: 46px;
     color: #515151;
     letter-spacing: -0.96px;
     text-align: center;
+    margin-bottom: 82px;
 }
 .news-title::after{
     display: block;
@@ -197,7 +196,6 @@ padding-bottom: 46px;
     background-color: #1abc9c;
     margin: 0 auto;
     margin-top: 32px;
-    margin-bottom: 82px;
 }
 .news-list{
     list-style: none;
@@ -245,7 +243,6 @@ letter-spacing: -0.36px;
     border: none;
     border-radius: 4px;
     text-align: center;
-    
     font-size: 16px;
     line-height: 48px;
     font-weight: 300;
