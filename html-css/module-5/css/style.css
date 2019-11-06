@@ -41,6 +41,7 @@ input[type="radio"].visually-hidden{
 }
 a{
     text-decoration: none;
+    
 }
 ul,
 ol{
@@ -52,6 +53,7 @@ body{
     font-size: 14px;
     line-height: 26px;
 }
+
 header{
     padding-top: 38px;
     padding-bottom: 32px;
@@ -93,6 +95,9 @@ header{
     .site-navigation li:not(:last-child){
         margin-right: 36px;
     }
+    .site-navigation li:last-child{
+        float: right;
+    }
 .site-navigation a{
     color: #0f0101;
     font-weight: 700;
@@ -114,15 +119,47 @@ header{
     background-color: black;
     position: relative;
 }
+.slider-btns {
+    display: block;
+    width: 1110px;
+    right: 50%;
+    left: 50%;
+    bottom: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    
+}
+
+.prev{
+    float: left;
+    background-image: url(../img/icons/arrow-prev.png);
+}
+.next{
+    float: right;
+    background-image: url(../img/icons/arrow-next.png);
+}
+.slider-btn{
+    width: 100px;
+    height: 100px;
+    border: none;
+    background-color: #54a18f;
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+    
+}
+
 .titles{
+    width: 730px;
     position: absolute;
     display: block;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    
 }
 .slider-title{
-    font-size: 52px;
+    font-size: 54px;
     font-weight: 700;
     text-transform: uppercase;
     color: #ffffff;
@@ -148,6 +185,7 @@ header{
 .product-title{
     font-size: 0;
     margin: 0;
+   padding-top: 100px;
 }
 .product-title{
     text-align: center;
@@ -188,11 +226,14 @@ header{
 .card-bottom{
     position: absolute;
     bottom: 0px;
+    width: 254px;
+    height: 40px;
+    background-color: black;
 }
 .product-list-item:nth-child(4n){
     margin-right: 0;
 }
-.product-list-item p{
+.product-list-item {
     font-family: 'Roboto', sans-serif;
     font-weight: 900;
     font-size: 18px;
@@ -203,13 +244,13 @@ header{
 .product-list-item:last-child{
     float: right;
 }
-.product-list-item:hover .card-bottom p{
+.product-list-item:hover .text{
     background-color: #1abc9c;
 }
-.product-list-item:hover .card-bottom p:last-child{
+.product-list-item:hover .price{
     background-color: #7fd9c7;
 }
-p.text{
+.text {
     display: block;
     width: 200px;
     height: 40px;
@@ -219,8 +260,19 @@ p.text{
     text-align: left;
     text-indent: 12px;
     text-transform: uppercase;
+    float: left;
 }
-p.price{
+.text-link{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 900;
+    font-size: 18px;
+    line-height: 38px;
+    letter-spacing: -0.360px;
+    color: #fff;
+}
+
+
+.price{
     display: block;
     width: 54px;
     height: 40px;
@@ -229,16 +281,79 @@ p.price{
     margin: 0;
     text-align: center;
     text-transform: uppercase; 
+    float: right;
 }
-.footer{
-        display: block;
-        background-color: #515151;
-        font-size: 16px;
-        font-family: "Open Sans";
-        color: rgb(254, 254, 254);
-        text-align: center;
-        margin: 0;
-        height: 17px;     
+.overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-width: 10px;
+    border-color: rgb(255, 255, 255);
+    border-style: solid;
+    background-color: rgb(0, 0, 0);
+    opacity: 0.549;
+       }
+       /* .Rectangle_50_copy {
+        border-width: 10px;
+        border-color: rgb(255, 255, 255);
+        border-style: solid;
+        background-color: rgb(0, 0, 0);
+        opacity: 0.549;
+        position: absolute;
+        left: 530px;
+        top: 946px;
+        width: 235px;
+        height: 261px;
+        z-index: 25;
+      } */
+      
+      
+.card-list-item:first-child .card-list-link{
+    background-image: url(../img/icons/heart.png);
+}
+.card-list-item{
+    float: left;
+}
+.card-list-link{
+    display: block;
+    width: 50px;
+    height: 50px;
+    background: no-repeat;
+    background-position: center;
+    background-color: blue;
+    
+}
+.card-list-link:last-child{
+    width: 165px;
+    height: 50px;
+}
+.card-list-link:nth-last-child(4n){
+    margin-right: 12px;
+    margin-bottom: 12px;
 }
 
-  
+.footer {
+    padding: 38px 0 38px 0;
+    background-color: #323232;
+    text-align: center;
+ }
+ .text {
+    font-family: “OpenSans”, sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    text-transform: capitalize;
+    color: #ffffff;
+    margin-bottom: 40px;
+ }
+ .author-name {
+    font-family: “OpenSans”, sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    text-transform: capitalize;
+    color: #ffffff;
+ }
+ .author-name:hover{
+     color: #46bfa9;
+ }
