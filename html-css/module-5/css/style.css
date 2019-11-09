@@ -53,7 +53,7 @@ body{
     font-size: 14px;
     line-height: 26px;
 }
-
+/* HEADER NAVIGATION */
 header{
     padding-top: 38px;
     padding-bottom: 32px;
@@ -113,58 +113,48 @@ header{
     color: #1abc9c;
 }
 /* SLIDER */
-.slider{
-    font-size: 0;
-    margin: 0;
-    padding: 0;
-    background-color: black;
-    position: relative;
-}
-.site-background{
+.slider {
+    background-image: url(../img/background-pic.jpg);
     background-repeat: no-repeat;
-    background-position: center;
     background-size: cover;
-    width: 100%;
-    opacity: 0.5;
-}
-
-.slider-btns {
-    display: block;
-    right: 50%;
-    left: 50%;
-    bottom: 50%;
-    transform: translate(-50%, -50%);
+    background-position: 50% 50%;
+  }
+  .slider-wrapper {
+    position: relative;
+    width: 1110px;
+    height: 600px;
+    margin: 0 auto;
+  }
+  .slider-control {
     position: absolute;
-    
-}
-.prev{
-    float: left;
-    background-image: url(../img/icons/arrow-prev.png);
-}
-.next{
-    float: right;
-    background-image: url(../img/icons/arrow-next.png);
-}
-.slider-btn{
-    width: 100px;
-    height: 100px;
+    background-color: rgb(26, 188, 156);
+    width: 104px;
+    height: 104px;
     border: none;
-    background-color: #54a18f;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
     background-repeat: no-repeat;
     background-position: center;
-    cursor: pointer;   
-}
-.slider-btn:hover{
-    background-color: #7fd9c7;
-}
-
-.slider-carousel {
+  }
+  .slider-control:hover {
+    background-color: rgba(78, 198, 171, 0.65);
+  }
+  .prev {
+    left: 0;
+    background-image: url(../img/icons/arrow-prev.png);
+  }
+  .next {
+    right: 0;
+    background-image: url(../img/icons/arrow-next.png);
+  }
+  .slider-carousel {
     position: absolute;
     top: 50%;
-    left: 17%;
+    left: 16%;
     transform: translateY(-50%);
   }
-.slider-title{
+  .slider-title {
     font-size: 60px;
     font-family: "Roboto", sans-serif;
     font-weight: 900;
@@ -172,16 +162,16 @@ header{
     text-transform: uppercase;
     letter-spacing: -1.2px;
     margin-bottom: 36px;
-}
-.slider-subtitle{
+  }
+  .slider-text {
     font-size: 24px;
-  font-family: "Roboto", sans-serif;
-  font-weight: 300;
-  color: rgb(255, 255, 255);
-  text-transform: uppercase;
-  letter-spacing: -1.2px;
-}
-
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+    letter-spacing: -1.2px;
+  }
+/* PRODUCT SECTION */
 .products{
     background-color: #e9f0fd;
     padding-bottom: 100px;
@@ -370,7 +360,6 @@ header{
     font-weight: 300;
     text-transform: capitalize;
     color: #ffffff;
-    margin-bottom: 40px;
  }
  .author-name-link{
      color: #46bfa9;
