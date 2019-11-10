@@ -1,9 +1,17 @@
-* {
+* 
+{
     margin: 0;
     padding: 0;
     box-sizing: inherit;
 }
-
+:root {
+    --aqua-color: #95e1d3;
+    --grey-color: #999999;
+    --pink-color: #f38181;
+    --font-roboto: 'Roboto', sans-serif;
+    --font-montserrat: 'Montserrat', sans-serif;
+    --font-kaushan: 'Kaushan Script', cursive;
+}
 html {
     box-sizing: border-box;
 }
@@ -31,50 +39,149 @@ ol {
 
 .container {
     width: 1200px;
+    display: block;
     margin: 0 auto;
 }
-.navigation{
+/* HEADER */
+.navigation {
     display: flex;
     justify-content: space-between;
     align-items: center;
-
+    min-height: 100px;
+    padding-bottom: 100px;
+    padding-top: 20px;
 }
-.logo{
-    font-family: 'Montserrat', sans-serif;
+.logo {
+    font-family: var(--font-montserrat);
     font-size: 30px;
     font-weight: 700;
-    color: #95e1d3;
-    margin-bottom: 8px;
+    color: var(--aqua-color);
+    margin-bottom: 22px;
+    transition: color 0.2s linear;
+    
 }
-.header-list{
+.nav-list {
     display: flex;
     justify-content: space-between;
-    min-width: 490px; 
-    align-items: flex-end; 
+    min-width: 490px;
 }
-.header-list-link{
-    font-family: 'Montserrat', sans-serif;
+.nav-link{
+    color: var(--aqua-color);
+    font-family: var(--font-montserrat);
     font-size: 14px;
+    text-transform: uppercase;
+    position: relative;
+    transition: color 0.2s linear;
+}
+.nav-link:hover,
+.logo:hover,
+.nav-link:focus{
+    color: var(--pink-color);
+}
+.nav-link:hover::after,
+.nav-link:focus::after{
+display: block;
+content: '';
+position: absolute;
+background-color: var(--pink-color);
+width: 100%;
+height: 4px;
+margin-top: 12px;
+}
+/* SECTION SERVICES */
+.services{
+    padding-bottom: 90px;
+}
+.section-subtitle{
+    font-family: var(--font-kaushan);
+    font-size: 24px;
+    line-height: 50px;
     font-weight: 400;
-    color: #bdece4;
+    text-align: center;
+    color: #333333
+}
+.section-title{
+    font-family: var(--font-montserrat);
+    font-size: 30px;
+    font-weight: 700;
+    text-align: center;
+    color: #333333;
     text-transform: uppercase;
 }
-/* .header-list-link::after{
-    display: flex;
-    content: '';
+.section-title::after{
+    display: block;
+    content: "";
     height: 4px;
-    width: 100%;
-    background-color: #ff9999;
-    margin-top: 12px;
-    opacity: 0;
-} */
-.header-list-link:hover:after {
-    content: '';
-    display: flex;
-    height: 4px;
-    width: 50px;
-    background-color: #ff9999;
-    margin: 0 auto;
-    margin-top: 12px;
-    position: fixed;
+    width: 60px;
+    background-color: var(--pink-color);
+    margin: 36px auto 60px auto;
 }
+.services-list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.services-list-item{
+    width: 392px;
+    padding-left: 32px;
+    position: relative;
+    margin-bottom: 90px;
+}
+.services-list-item:nth-child(n+3){
+    margin-bottom: 0;
+}
+.services-list-item-title{
+    font-family: var(--font-montserrat);
+    font-size: 14px;
+    line-height: 0;
+    font-weight: 400;
+    color: #333333;
+    text-transform: uppercase;
+    margin-bottom: 18px;
+    padding-left: 60px;
+}
+.services-list-item-text{
+    font-family: "Roboto", sans-serif;
+    font-size: 14px;
+    padding-left: 60px;
+    color: var(--grey-color);
+    line-height: 24px;
+}
+.services-list-item:before{
+    content: '';
+    display: block;
+    width: 32px;
+    height: 31px;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: absolute;
+}
+.services-list-item:first-child::before{
+    background-image: url(../img/icons/ALARM-1.png);
+}
+.services-list-item:nth-child(2)::before{
+    background-image: url(../img/icons/LINE-GRAPH-2.png);
+}
+.services-list-item:nth-child(3)::before{
+    background-image: url(../img/icons/COMPUTER-OK-3.png);
+}
+.services-list-item:nth-child(4)::before{
+    background-image: url(../img/icons/BOOK-2-4.png);
+}
+.services-list-item:nth-child(5)::before{
+    background-image: url(../img/icons/HOME-5.png);
+}
+.services-list-item:last-child::before{
+    background-image: url(../img/icons/IMAGE-6.png);
+}
+.team-text{
+    display: block;
+    text-align: center;
+    width: 974px;
+    margin: 0 auto;
+    font-family: var(--grey-color);
+    font-size: 14px;
+    font-weight: 400;
+    padding-bottom: 90px;
+}
+
