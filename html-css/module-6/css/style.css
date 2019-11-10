@@ -155,7 +155,7 @@
   }
   
   .service-list .service-item:first-child {
-    background-image: url(/img/icons/ALARM-1.png);
+    background-image: url(../img/icons/ALARM-1.png);
     background-repeat: no-repeat;
     background-position: left center;
   }
