@@ -155,37 +155,37 @@
   }
   
   .service-list .service-item:first-child {
-    background-image: url(/img/icons/ALARM-1.png);
+    background-image: url(img/icons/ALARM-1.png);
     background-repeat: no-repeat;
     background-position: left center;
   }
   
   .service-list .service-item:nth-child(2) {
-    background-image: url(/img/icons/LINE-GRAPH-2.png);
+    background-image: url(img/icons/LINE-GRAPH-2.png);
     background-repeat: no-repeat;
     background-position: left center;
   }
   
   .service-list .service-item:nth-child(3) {
-    background-image: url(/img/icons/COMPUTER-OK-3.png);
+    background-image: url(img/icons/COMPUTER-OK-3.png);
     background-repeat: no-repeat;
     background-position: left center;
   }
   
   .service-list .service-item:nth-child(4) {
-    background-image: url(/img/icons/BOOK-2-4.png);
+    background-image: url(img/icons/BOOK-2-4.png);
     background-repeat: no-repeat;
     background-position: left center;
   }
   
   .service-list .service-item:nth-child(5) {
-    background-image: url(/img/icons/HOME-5.png);
+    background-image: url(img/icons/HOME-5.png);
     background-repeat: no-repeat;
     background-position: left center;
   }
   
   .service-list .service-item:last-child {
-    background-image: url(/img/icons/IMAGE-6.png);
+    background-image: url(img/icons/IMAGE-6.png);
     background-repeat: no-repeat;
     background-position: left center;
   }
