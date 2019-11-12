@@ -71,7 +71,7 @@ ol {
     width: 320px;
     margin: 0 auto;
     padding: 0 10px;
-    background-image: url(/img/main-pic.png);
+    background-image: url('../img/main-pic.png');
     background-repeat: no-repeat;
 }
 
