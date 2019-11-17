@@ -120,11 +120,17 @@
   .logo:hover{
     color: var(--pink-color);
   }
-  
+  .nav-link svg{
+    width: 18px;
+    height: 18px;
+    fill: var(--white-color);
+    transition: all 0.2s linear;
+  }
+
   .nav-list {
     display: flex;
     justify-content: space-between;
-    width: 470px;
+    width: 600px;
     list-style: none;
     margin: 0;
     padding: 0;
@@ -143,6 +149,9 @@
   .nav-link:hover,
   .nav-link:focus {
     color: var(--pink-color);
+  }
+  .nav-link:hover svg{
+    fill: var(--pink-color);
   }
   
   .nav-link:hover::after,
@@ -267,31 +276,31 @@
   }
   
   .service-list .service-item:nth-child(2) {
-    background-image: url(../img/icons/LINE-GRAPH-2.png);
+    background-image: url(../img/icons/LINE\ GRAPH.svg);
     background-repeat: no-repeat;
     background-position: left center;
   }
   
   .service-list .service-item:nth-child(3) {
-    background-image: url(../img/icons/COMPUTER-OK-3.png);
+    background-image: url(../img/icons/COMPUTER\ _\ OK.svg);
     background-repeat: no-repeat;
     background-position: left center;
   }
   
   .service-list .service-item:nth-child(4) {
-    background-image: url(../img/icons/BOOK-2-4.png);
+    background-image: url(../img/icons/BOOK\ 2.svg);
     background-repeat: no-repeat;
     background-position: left center;
   }
   
   .service-list .service-item:nth-child(5) {
-    background-image: url(../img/icons/HOME-5.png);
+    background-image: url(../img/icons/HOME.svg);
     background-repeat: no-repeat;
     background-position: left center;
   }
   
   .service-list .service-item:last-child {
-    background-image: url(../img/icons/IMAGE-6.png);
+    background-image: url(../img/icons/IMAGE.svg);
     background-repeat: no-repeat;
     background-position: left center;
   }
@@ -374,26 +383,34 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    
   }
   
   .social-item {
     order: 0;
     flex: 0 1 auto;
     align-self: auto;
+    
   }
   
   .social-link {
-    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     height: 55px;
     width: 55px;
     background-color: #fce38a;
     position: relative;
+    transition: all 0.2s linear;
+    
   }
   
-  .social-link:hover {
-    background-color: var(--aqua-color);
+  .social-link:hover{
+    background-color: #f38181;
   }
-  
+  .social-link:hover svg{
+    fill: #ffffff;
+  }
   /* .social-list  / .team-card-content */
   .team-item:hover .team-card {
     opacity: 1;
@@ -401,11 +418,19 @@
     box-shadow: 10px 10px 0 0 var(--aqua-color);
   }
   
-  .social-img {
+  /* .social-img {
     position: absolute;
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
+  } */
+  .social-item svg{
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    fill: #f38181;
+    transition: all 0.2s linear;
+    
   }
   
   /* Page footer */
