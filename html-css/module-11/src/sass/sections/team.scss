@@ -1,0 +1,170 @@
+.section__team {
+    padding-bottom: 100px;
+  }
+  
+  
+  .team__description {
+    font-family: var(--font-roboto);
+    font-size: 14px;
+    line-height: 20px;
+    color: var(--grey-color);
+    display: block;
+    margin: 0 auto;
+    width: 900px;
+    text-align: center;
+    padding-bottom: 90px;
+  }
+  
+  .team__card {
+    height: 470px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    background: -webkit-gradient(
+      linear,
+      left top, left bottom,
+      from(rgba(243, 129, 129, 0.9)),
+      to(rgba(252, 227, 138, 0.9))
+    );
+    background: -o-linear-gradient(
+      rgba(243, 129, 129, 0.9),
+      rgba(252, 227, 138, 0.9)
+    );
+    background: linear-gradient(
+      rgba(243, 129, 129, 0.9),
+      rgba(252, 227, 138, 0.9)
+    );
+    width: 100%;
+    -webkit-transition: -webkit-transform 0.2s linear, -webkit-box-shadow 0.2s linear 0s;
+    transition: -webkit-transform 0.2s linear, -webkit-box-shadow 0.2s linear 0s;
+    -o-transition: transform 0.2s linear, box-shadow 0.2s linear 0s;
+    transition: transform 0.2s linear, box-shadow 0.2s linear 0s;
+    transition: transform 0.2s linear, box-shadow 0.2s linear 0s, -webkit-transform 0.2s linear, -webkit-box-shadow 0.2s linear 0s;
+  }
+  
+  .team__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .team__list-item {
+    /* width: 380px; */
+    position: relative;
+  }
+  
+  .team__name {
+    font-family: var(--font-montserrat);
+    font-size: 14px;
+    color: #333333;
+    text-transform: uppercase;
+    display: block;
+    text-align: center;
+    margin-top: 30px;
+  }
+  
+  .team__position {
+    display: block;
+    text-align: center;
+    margin-top: 10px;
+    font-family: var(--font-roboto);
+    font-weight: 300;
+    font-style: italic;
+    color: var(--grey-color);
+  }
+  
+  /* Social icons */
+  
+  .social__list {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  
+  .social__list-item {
+    -webkit-box-ordinal-group: 1;
+        -ms-flex-order: 0;
+            order: 0;
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 auto;
+            flex: 0 1 auto;
+    -ms-flex-item-align: auto;
+        -ms-grid-row-align: auto;
+        align-self: auto;  
+  }
+  
+  .social__list-link {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    height: 55px;
+    width: 55px;
+    background-color: #fce38a;
+    position: relative;
+    -webkit-transition: all 0.2s linear;
+    -o-transition: all 0.2s linear;
+    transition: all 0.2s linear;
+    
+  }
+  
+  .social__list-link:hover{
+    background-color: #f38181;
+  }
+  .social__list-link:hover svg{
+    fill: #ffffff;
+  }
+  /* .social-list  / .team-card-content */
+  .team__list-item:hover .team__card {
+    opacity: 1;
+    -webkit-transform: translate(-10px, -10px);
+        -ms-transform: translate(-10px, -10px);
+            transform: translate(-10px, -10px);
+    -webkit-box-shadow: 10px 10px 0 0 var(--aqua-color);
+            box-shadow: 10px 10px 0 0 var(--aqua-color);
+  }
+  
+  /* .social-img {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  } */
+  .social__list-item svg{
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    fill: #f38181;
+    -webkit-transition: all 0.2s linear;
+    -o-transition: all 0.2s linear;
+    transition: all 0.2s linear;
+    
+  }
+  
